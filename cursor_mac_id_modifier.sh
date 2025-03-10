@@ -585,14 +585,6 @@ disable_auto_update() {
         echo -e "${BLUE}sudo rm -rf \"$updater_path\" && sudo touch \"$updater_path\" && sudo chmod 444 \"$updater_path\"${NC}"
     fi
     
-    echo
-    log_info "验证方法："
-    echo "1. 运行命令：ls -l \"$updater_path\""
-    echo "   确认文件权限显示为：r--r--r--"
-    echo "2. 运行命令：ls -l \"$app_update_yml\""
-    echo "   确认文件权限显示为：r--r--r--"
-    echo
-    log_info "完成后请重启 Cursor"
 }
 
 # 生成随机MAC地址
